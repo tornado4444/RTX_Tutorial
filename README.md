@@ -5,4 +5,4 @@ P.S I'm studying from the book: Ray Tracing in One Weekend. It's my first steps.
 URL: https://raytracing.github.io/books/RayTracingInOneWeekend.html
 
 # Final result.
-[!image]https://github.com/tornado4444/RTX_Tutorial/blob/main/rtx.png
+[!image](https://github.com/tornado4444/RTX_Tutorial/blob/main/rtx.png)
