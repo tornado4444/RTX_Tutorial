@@ -13,7 +13,25 @@ On book write the next instrucion:
 build\Debug\Rethink.exe > image.ppm
 ```
 But in my program already realize the next code:
+```c++
+std::ofstream ppm_file("heh.ppm");
+if (!ppm_file.is_open()) {
+    std::cerr << "Cannot open file!" << std::endl;
+    return 1;
+}
 
+std::streambuf* original_cout = std::cout.rdbuf();
+std::cout.rdbuf(ppm_file.rdbuf());
+
+cam.render(world);
+
+std::cout.rdbuf(original_cout);
+
+ppm_file.close();
+
+std::cout << "Rendering in file heh.ppm" << std::endl;
+```
+It's for automatically create the .ppm file, that don't render every time. 
 URL: https://raytracing.github.io/books/RayTracingInOneWeekend.html
 
 # Final result.
