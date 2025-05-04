@@ -8,6 +8,11 @@ You'd get the debug build from CMake running this command:
 cmake -B build
 cmake --build build
 ```
+On book write the next instrucion:
+```cmake
+build\Debug\Rethink.exe > image.ppm
+```
+But in my program already realize the next code:
 
 URL: https://raytracing.github.io/books/RayTracingInOneWeekend.html
 
